@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Bài tập DOM</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="menu">
+                <a href="#" data-tab="bai1" class="tab-link active"> Bài 1 </a>
+                <a href="#" data-tab="bai2" class="tab-link"> Bài 2 </a>
+                <a href="#" data-tab="bai3" class="tab-link"> Bài 3 </a>
+                <a href="#" data-tab="bai4" class="tab-link"> Bài 4 </a>
+                <a href="#" data-tab="bai5" class="tab-link"> Bài 5 </a>
+            </div>
+        
+
+            <div class="content">
+                <div id="bai1" class="tab-content active-content">
+                    <h2 class="mt-2">Bài 1: Tính tiền lương nhân viên</h2>
+                    <!-- Tạo 2 ô cho người dùng nhập lương và số ngày làm việc -->
+                    
+                    <div class="form-group mt-5">
+                        <label for="luong">Lương mỗi ngày:</label>
+                        <input type="number" id="luong" class="form-control" placeholder="Nhập lương mỗi ngày" />
+                    </div>                        
+
+                    <div class="form-group mt-5">
+                        <label for="ngay">Số ngày làm việc:</label>
+                        <input type="number" id="ngay" class="form-control" placeholder="Nhập số ngày làm việc" />
+                    </div>
+
+                    <!-- Tạo nút tính tiền lương -->
+                    <button id="tinhbai1" class="btn btn-primary m-5">Tính tiền lương</button>
+                    
+                    <!-- Hiển thị kết quả -->
+                    <div id="ketqua">
+                        <h3 id="tienluong">Kết quả: </h3>
+                        <!-- <p id="tienluong"></p> -->
+                    </div>
+                </div>
+               
+                <div id="bai2" class="tab-content">
+                    <h2 class="mt-2">Bài 2: Tính giá trị trung bình</h2>
+
+                    <div class="form-group mt-2">
+                        <label for="so1">Số thứ nhất:</label>
+                        <input type="number" id="so1" class="form-control" placeholder="Nhập số thứ nhất" />
+                    </div> 
+                    
+                    <div class="form-group mt-2">
+                        <label for="so2">Số thứ hai:</label>
+                        <input type="number" id="so2" class="form-control" placeholder="Nhập số thứ hai" />
+                    </div> 
+
+                    <div class="form-group mt-2">
+                        <label for="so3">Số thứ ba:</label>
+                        <input type="number" id="so3" class="form-control" placeholder="Nhập số thứ ba" />
+                    </div> 
+
+                    <div class="form-group mt-2">
+                        <label for="so4">Số thứ bốn:</label>
+                        <input type="number" id="so4" class="form-control" placeholder="Nhập số thứ bốn" />
+                    </div> 
+
+                    <div class="form-group mt-2">
+                        <label for="so5">Số thứ năm:</label>
+                        <input type="number" id="so5" class="form-control" placeholder="Nhập số thứ năm" />
+                    </div> 
+
+                    <button id="tinhbai2" class="btn btn-primary m-5">Tính trung bình</button>
+
+                    <div id="ketqua2">
+                        <h3 id="trungbinh">Kết quả: </h3>
+                    </div>
+                </div>
+
+                <div id="bai3" class="tab-content">
+                    <h2 class="mt-2">Bài 3: Quy đổi tiền</h2>
+                    
+                    <div class="form-group mt-5">
+                        <label for="usd">Số USD:</label>
+                        <input type="number" id="usd" class="form-control" placeholder="Nhập số USD" />
+                    </div>
+
+                    <button id="tinhbai3" class="btn btn-primary m-5">Quy đổi</button>
+
+                    <div id="ketqua3">
+                        <h3 id="vnd">Kết quả: </h3>
+                    </div>
+                </div>
+
+                <div id="bai4" class="tab-content">
+                    <h2 class="mt-2">Bài 4: Tính diện tích, chu vi hình chữ nhật</h2>
+                    
+                    <div class="form-group mt-5">
+                        <label for="chieudai">Chiều dài:</label>
+                        <input type="number" id="chieudai" class="form-control" placeholder="Nhập chiều dài" />
+                    </div>
+
+                    <div class="form-group mt-5">
+                        <label for="chieurong">Chiều rộng:</label>
+                        <input type="number" id="chieurong" class="form-control" placeholder="Nhập chiều rộng" />
+                    </div>
+
+                    <button id="tinhbai4" class="btn btn-primary m-5">Tính</button>
+
+                    <div id="ketqua4">
+                        <h3 id="dientich">Diện tích: </h3>
+                        <h3 id="chuvi">Chu vi: </h3>
+                    </div>
+                </div>
+
+                <div id="bai5" class="tab-content">
+                    <h2 class="mt-2">Bài 5: Tính tổng 2 ký số</h2>
+                    
+                    <div class="form-group m-5">
+                        <label for="so">Nhập số:</label>
+                        <input type="number" id="so" class="form-control" placeholder="Nhập số" />
+                    </div>
+
+                    <button id="tinhbai5" class="btn btn-primary mb-5">Tính</button>
+
+                    <div id="ketqua5">
+                        <h3 id="tong">Tổng 2 ký số: </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./index.js"></script>
+    </body>
+</html>

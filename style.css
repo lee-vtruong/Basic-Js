@@ -1,0 +1,69 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Css cho toàn thẻ body */
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Đảm bảo khung vuông nằm giữa */
+}
+
+/* Khung nội dung chính */
+.container {
+    padding: 0;
+    width: 900px; 
+    height: 700px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden; /* Đảm bảo mọi thứ nằm trong container */
+}
+
+/* Menu bên trong container */
+.menu {
+    margin: 0;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+.content {
+    flex: 1; /* Chiếm toàn bộ không gian còn lại */
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    flex: 1; /* Chiếm toàn bộ không gian còn lại */
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.active-content {
+    display: block;
+}
