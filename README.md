@@ -3,7 +3,7 @@
 This project contains a series of DOM manipulation exercises implemented using HTML, CSS, and JavaScript. It provides a practical way to understand and practice fundamental DOM concepts.
 
 ## Live Demo:
-[Click here](https://vercel.com/leevtruongs-projects/basic-js)
+[Click here](https://basic-js-theta.vercel.app/)
 
 ## Table of Contents
 
